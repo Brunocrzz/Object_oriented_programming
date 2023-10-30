@@ -1,5 +1,8 @@
 package veiculo;
 
+import cnh.Cnh;
+import infracao.Infracao;
+
 public  abstract class Veiculo {
     private String modelo;
     private String placa;
@@ -63,5 +66,9 @@ public  abstract class Veiculo {
 
     public void setMarca(String marca) {
         this.marca = marca;
+    }
+
+    public void listarInfracoes(){
+
     }
 }

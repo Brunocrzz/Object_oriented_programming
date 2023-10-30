@@ -1,6 +1,8 @@
 package cnh;
 
 import infracao.Infracao;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Cnh {
 
@@ -10,18 +12,17 @@ public class Cnh {
     private String dataEmissao;
     private int pontuacao;
     private String status;
-    private Infracao Infracao;
+    private List<Infracao> infracoes = new ArrayList<>();
     private String numCnh;
 
     public Cnh(String categoria, String ufEmissao, String dataValidade, String dataEmissao, int pontuacao,
-               String status, infracao.Infracao infracao, String numCnh) {
+               String status, String numCnh) {
         this.categoria = categoria;
         this.ufEmissao = ufEmissao;
         this.dataValidade = dataValidade;
         this.dataEmissao = dataEmissao;
         this.pontuacao = pontuacao;
         this.status = status;
-        Infracao = infracao;
         this.numCnh = numCnh;
     }
 
@@ -49,11 +50,16 @@ public class Cnh {
         return status;
     }
 
-    public infracao.Infracao getInfracao() {
-        return Infracao;
-    }
 
     public String getNumCnh() {
         return numCnh;
+    }
+
+    public List<Infracao> getInfracoes() {
+        return infracoes;
+    }
+
+    public void addInfracao(Infracao infracao) {
+        this.infracoes.add(infracao);
     }
 }
