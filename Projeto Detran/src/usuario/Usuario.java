@@ -1,22 +1,27 @@
 package usuario;
 
 import cnh.Cnh;
+import infracao.Infracao;
 import veiculo.Veiculo;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Iterator;
 
 public class Usuario {
     private String nome;
     private String cpf;
     private String sexo;
     private String email;
-    private Cnh cng;
+    private Cnh cnh;
     private  Veiculo Veiculo;
+    private final List<Infracao> infracoes = new ArrayList<>();
 
-    public Usuario(String nome, String cpf, String sexo, String email, Cnh cng, veiculo.Veiculo veiculo) {
+    public Usuario(String nome, String cpf, String sexo, String email, Cnh cnh, veiculo.Veiculo veiculo) {
         this.nome = nome;
         this.cpf = cpf;
         this.sexo = sexo;
         this.email = email;
-        this.cng = cng;
+        this.cnh = cnh;
         Veiculo = veiculo;
     }
 
@@ -52,12 +57,12 @@ public class Usuario {
         this.email = email;
     }
 
-    public Cnh getCng() {
-        return cng;
+    public Cnh getCnh() {
+        return cnh;
     }
 
-    public void setCng(Cnh cng) {
-        this.cng = cng;
+    public void setCnh(Cnh cnh) {
+        this.cnh = cnh;
     }
 
     public veiculo.Veiculo getVeiculo() {
@@ -68,6 +73,45 @@ public class Usuario {
         Veiculo = veiculo;
     }
 
+    public void cadastrarConta(String nome, String cpf, String sexo, String email, Cnh cnh, veiculo.Veiculo veiculo){
+
+    }
+
+    public String obterDadosUsuario(String nome, String cpf, String sexo, String email) {
+        return "(" + nome + ", " + cpf + ", " + sexo + ", " + email + ")";
+    }
+    public List<Infracao> obterInfracoesCnh() {
+        if (this.cnh != null) {
+            return this.cnh.getInfracoes();
+        }
+        return new ArrayList<>();
+    }
+
+    public Veiculo procurarVeiculo(String placa) {
+        if (this.Veiculo != null && this.Veiculo.getPlaca().equals(placa)) {
+            return this.Veiculo;
+        }
+        return null;
+    }
+
+    public void removerVeiculo(Veiculo veiculo) {
+        if (this.Veiculo != null && this.Veiculo.equals(veiculo)) {
+            this.Veiculo = null;
+        }
+    }
+
+    public void transferirInfracao(Usuario outroUsuario, String idInfracao) {
+        Iterator<Infracao> iterator = this.infracoes.iterator();
+        while (iterator.hasNext()) {
+            Infracao infracao = iterator.next();
+            if (infracao.getId().equals(idInfracao)) {
+                outroUsuario.getCnh().addInfracao(infracao);
+                iterator.remove();
+                break;
+            }
+        }
+
+    }
 }
 
 

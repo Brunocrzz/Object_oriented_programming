@@ -1,8 +1,13 @@
 package cnh;
 
 import infracao.Infracao;
+
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
+
 
 public class Cnh {
 
@@ -12,11 +17,12 @@ public class Cnh {
     private String dataEmissao;
     private int pontuacao;
     private String status;
-    private List<Infracao> infracoes = new ArrayList<>();
     private String numCnh;
+    private List<Infracao> infracoes = new ArrayList<>();
+
 
     public Cnh(String categoria, String ufEmissao, String dataValidade, String dataEmissao, int pontuacao,
-               String status, String numCnh) {
+               String status, String numCnh, List<Infracao> infracoes) {
         this.categoria = categoria;
         this.ufEmissao = ufEmissao;
         this.dataValidade = dataValidade;
@@ -50,7 +56,6 @@ public class Cnh {
         return status;
     }
 
-
     public String getNumCnh() {
         return numCnh;
     }
@@ -61,5 +66,24 @@ public class Cnh {
 
     public void addInfracao(Infracao infracao) {
         this.infracoes.add(infracao);
+    }
+    public String obterDadosCnh(String categoria, String ufEmissao, String dataEmissao, String dataValidade,
+                                int pontuacao, String status, String numCnh) {
+        return "(" + categoria + ", " + ufEmissao + ", " + dataEmissao + ", " + dataValidade + pontuacao + status +
+                numCnh + ")";
+    }
+
+    public void renovarCnh(String numCnh, String dataValidade) throws Exception {
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        Date dateValidade = sdf.parse(dataValidade);
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(dateValidade);
+
+        Date now = new Date();
+        if (dateValidade.before(now)) {
+            calendar.add(Calendar.YEAR, 10);
+            dateValidade = calendar.getTime();
+            dataValidade = sdf.format(dateValidade);
+        }
     }
 }

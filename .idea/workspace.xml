@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b091161b-6c2b-4ab5-bd0f-7d425af738f6" name="Changes" comment="Inserção de metódos e classes">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto Detran/src/cnh/Cnh.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projeto Detran/src/cnh/Cnh.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto Detran/src/detran/Detran.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projeto Detran/src/detran/Detran.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto Detran/src/infracao/Infracao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projeto Detran/src/infracao/Infracao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto Detran/src/usuario/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projeto Detran/src/usuario/Usuario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +36,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2XUfkkRwhGehTiE09A83qlmTdyW" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -50,9 +55,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "rodrigues",
+    "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/Users/tr26234es/Documents/Desenvolvimento/Object_oriented_programming",
+    "last_opened_file_path": "D:/Desenvolvimento/Object_oriented_programming",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -69,6 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698688724068</updated>
       <workItem from="1698688725068" duration="2969000" />
+      <workItem from="1698715007914" duration="4096000" />
     </task>
     <task id="LOCAL-00001" summary="Inserção de metódos e classes">
       <option name="closed" value="true" />
