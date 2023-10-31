@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b091161b-6c2b-4ab5-bd0f-7d425af738f6" name="Changes" comment="Inserção de metódos e classes">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b091161b-6c2b-4ab5-bd0f-7d425af738f6" name="Changes" comment="update class">
+      <change afterPath="$PROJECT_DIR$/Projeto Detran/src/dados/Dados.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projeto Detran/src/cnh/Cnh.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projeto Detran/src/cnh/Cnh.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projeto Detran/src/detran/Detran.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projeto Detran/src/detran/Detran.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projeto Detran/src/infracao/Infracao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projeto Detran/src/infracao/Infracao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projeto Detran/src/usuario/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projeto Detran/src/usuario/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto Detran/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Projeto Detran/src/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +50,6 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "1.8",
@@ -74,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698688724068</updated>
       <workItem from="1698688725068" duration="2969000" />
-      <workItem from="1698715007914" duration="4096000" />
+      <workItem from="1698715007914" duration="5828000" />
     </task>
     <task id="LOCAL-00001" summary="Inserção de metódos e classes">
       <option name="closed" value="true" />
@@ -84,7 +80,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698691676536</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update class">
+      <option name="closed" value="true" />
+      <created>1698719325546</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698719325546</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +108,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Inserção de metódos e classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inserção de metódos e classes" />
+    <MESSAGE value="update class" />
+    <option name="LAST_COMMIT_MESSAGE" value="update class" />
   </component>
 </project>
