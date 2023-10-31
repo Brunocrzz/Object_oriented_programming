@@ -3,8 +3,10 @@ package main;
 import java.util.Scanner;
 import detran.Detran;
 import usuario.Usuario;
+import dados.Dados;
 
 public class Main {
+    private static Dados dados = new Dados();
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -91,6 +93,8 @@ public class Main {
             System.out.println("Selecione uma ação:");
             System.out.println("1. Adicionar infração ao usuário");
             System.out.println("2. Deletar usuário");
+            System.out.println("3. Obter dados do usuário pelo nome");
+            System.out.println("4. Voltar ao menu principal");
             System.out.println("--------------------------");
             choice = scanner.nextInt();
             scanner.nextLine();  // Consume newline
@@ -112,12 +116,26 @@ public class Main {
                     // Aqui você pode chamar o método deletarUsuario
                     break;
                 case 3:
+                    System.out.println("Informe o nome do usuário:");
+                    String nome = scanner.nextLine();
+                    Usuario usuarioEncontrado = dados.obterDadosPorNome(nome);
+                    if (usuarioEncontrado != null) {
+                        System.out.println("Dados do usuário:");
+                        System.out.println("Nome: " + usuarioEncontrado.getNome());
+                        System.out.println("CPF: " + usuarioEncontrado.getCpf());
+                        System.out.println("Sexo: " + usuarioEncontrado.getSexo());
+                        System.out.println("Email: " + usuarioEncontrado.getEmail());
+                    } else {
+                        System.out.println("Usuário não encontrado.");
+                    }
+                    break;
+                case 4:
                     System.out.println("Retornando ao menu principal...");
                     break;
                 default:
                     System.out.println("Opção inválida.");
                     break;
             }
-        } while (choice != 3);
+        } while (choice != 4);
     }
 }

@@ -14,7 +14,14 @@ public class Dados {
     public void addUsuario(Usuario usuario) {
         usuarios.add(usuario);
     }
-
+    public Usuario obterDadosPorNome(String nome) {
+        for (Usuario usuario : usuarios) {
+            if (usuario.getNome().equalsIgnoreCase(nome)) {
+                return usuario;
+            }
+        }
+        return null;
+    }
     public void removeUsuario(Usuario usuario) {
         usuarios.remove(usuario);
     }
